@@ -12,6 +12,12 @@ http.createServer(function(req, res){
     console.log("request received");
     res.writeHead(400, {"Content-Type": "application/json"});
 
+    if(req.headers['x-github-event'] == 'ping'){
+        var data = JSON.stringify({"ping": "ok"});
+        console.log(req.method, req.headers)
+        return res.end(data); 
+    }
+
     if(req.headers['x-github-event'] != 'push' || req.method != 'POST'){
        var data = JSON.stringify({"error": "invalid request"});
        console.log(req.method, req.headers)
