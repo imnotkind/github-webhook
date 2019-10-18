@@ -15,6 +15,7 @@ http.createServer(function(req, res){
     if(req.headers['x-github-event'] == 'ping'){
         var data = JSON.stringify({"ping": "ok"});
         console.log(req.method, req.headers)
+        res.writeHead(200, {"Content-Type": "application/json"});
         return res.end(data); 
     }
 
