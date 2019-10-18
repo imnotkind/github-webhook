@@ -1,0 +1,19 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "mades changes from https://github.com/velopert/nodejs-github-webhook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imnotkind/nodejs-webhook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imnotkind/nodejs-webhook/issues"
+  },
+  "homepage": "https://github.com/imnotkind/nodejs-webhook#readme"
+}
