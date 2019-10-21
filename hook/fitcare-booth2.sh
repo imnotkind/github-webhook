@@ -2,14 +2,13 @@
 
 
 # DIRECTORY TO THE REPOSITORY
-REPOSITORY="/home/imnotkind/public_html/fitcare-booth"
+REPOSITORY="/home/imnotkind/Work/fitcare-booth2"
 
 cd $REPOSITORY
 
 git pull
 
-cd server
+cd back
 
-npm install
-
-forever restart index.js
+python manage.py makemigrations
+python manage.py migrate
