@@ -1,6 +1,6 @@
-# simple-github-webhook
+# github-webhook
 
-mades changes from https://github.com/velopert/nodejs-github-webhook
+github webhook made of nodejs
 
 ## How to use
 
